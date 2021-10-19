@@ -1,0 +1,65 @@
+parameters:
+
+services:
+
+    # Add DIContainer
+    App\Service\Game\GameGenerator\DIContainer\DIContainer:
+        class: App\Service\Game\GameGenerator\DIContainer\DIContainer
+        public: false
+
+    App\Service\Game\GameGenerator\DIContainer\DIContainerInterface:
+        class: App\Service\Game\GameGenerator\DIContainer\DIContainer
+        public: true
+
+
+    # Add Player Generator
+    App\Service\Game\GameGenerator\Player\PlayerGenerator:
+        class: App\Service\Game\GameGenerator\Player\PlayerGenerator
+        public: false
+        arguments:
+            ['@App\Service\Game\GameGenerator\DIContainer\DIContainerInterface']
+
+
+    App\Service\Game\GameGenerator\Player\PlayerGeneratorInterface:
+        class: App\Service\Game\GameGenerator\Player\PlayerGenerator
+        public: true
+        arguments:
+            ['@App\Service\Game\GameGenerator\DIContainer\DIContainerInterface']
+
+
+
+    # Add Player
+    App\Service\Game\Tournament\Player\Player:
+        class: App\Service\Game\Tournament\Player\Player
+        public: false
+
+    App\Service\Game\Tournament\Player\PlayerInterface:
+        class: App\Service\Game\Tournament\Player\Player
+        shared: false
+        public: true
+
+
+    # Add Participant Generator
+    App\Service\Game\GameGenerator\Participant\ParticipantGenerator:
+        class: App\Service\Game\GameGenerator\Participant\ParticipantGenerator
+        public: false
+        arguments:
+          [ '@App\Service\Game\GameGenerator\DIContainer\DIContainerInterface' ]
+
+
+    App\Service\Game\GameGenerator\Participant\ParticipantGeneratorInterface:
+        class: App\Service\Game\GameGenerator\Participant\ParticipantGenerator
+        public: true
+        arguments:
+          [ '@App\Service\Game\GameGenerator\DIContainer\DIContainerInterface' ]
+
+
+    # Add Participant
+    App\Service\Game\Tournament\KnightTournament\Participant\Participant:
+        class: App\Service\Game\Tournament\KnightTournament\Participant\Participant
+        public: false
+
+    App\Service\Game\Tournament\KnightTournament\Participant\ParticipantInterface:
+        class: App\Service\Game\Tournament\KnightTournament\Participant\Participant
+        shared: false
+        public: true

@@ -1,0 +1,51 @@
+parameters:
+
+services:
+
+    _defaults:
+        autowire: true      # Automatically injects dependencies in your services.
+        autoconfigure: true
+
+
+#    _instanceof:
+#        App\Service\Game\Tournament\KnightTournament\Round\RoundInterface:
+#            tags: [ 'app.round' ]
+
+
+
+    # Add Player
+    App\Service\Game\Tournament\Player\Player:
+        class: App\Service\Game\Tournament\Player\Player
+        public: false
+
+    App\Service\Game\Tournament\Player\PlayerInterface:
+        class: App\Service\Game\Tournament\Player\Player
+        shared: false
+        public: true
+
+
+    # Add Participant
+    App\Service\Game\Tournament\KnightTournament\Participant\Participant:
+        class: App\Service\Game\Tournament\KnightTournament\Participant\Participant
+        public: false
+
+    App\Service\Game\Tournament\KnightTournament\Participant\ParticipantInterface:
+        class: App\Service\Game\Tournament\KnightTournament\Participant\Participant
+        shared: false
+        public: true
+
+
+    # Rounds
+
+    App\Service\Game\Tournament\KnightTournament\Round\SwordRound:
+        class: App\Service\Game\Tournament\KnightTournament\Round\SwordRound
+
+
+
+
+
+
+
+
+
+
