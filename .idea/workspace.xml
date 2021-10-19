@@ -17,9 +17,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2a97833a-c6e4-4ac5-9a98-5c33eab8b62b" name="Default Changelist" comment="Start">
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/services.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/services.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/HomeController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/home/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/home/index.html.twig" afterDir="false" />
     </list>
@@ -190,16 +188,16 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\OpenServer\domains\tournament\src\Service\Game\Tournament\KnightTournament" />
+      <recent name="E:\OpenServer\domains\tournament\src\Service\Game\KnightTournament" />
+      <recent name="E:\OpenServer\domains\tournament\src\Service\Game" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\OpenServer\domains\tournament\src\Service\Game\Tournament\KnightTournament" />
       <recent name="E:\OpenServer\domains\tournament\src\Service\Game\Tournament" />
       <recent name="E:\OpenServer\domains\tournament\src\Service\Game\GameGenerator" />
       <recent name="E:\OpenServer\domains\tournament\src\Resources\config" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\OpenServer\domains\tournament\src\Service\Game\Tournament\KnightTournament" />
-      <recent name="E:\OpenServer\domains\tournament\src\Service\Game\KnightTournament" />
-      <recent name="E:\OpenServer\domains\tournament\src\Service\Game" />
     </key>
   </component>
   <component name="RunManager">
